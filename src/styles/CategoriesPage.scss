@@ -1,0 +1,28 @@
+.categories-page .header-container {
+  .categories-button {
+    visibility: hidden;     
+  }
+}
+
+.categories-page {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    height: inherit;
+    min-height: inherit;
+}
+
+.categories-container {
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+}
+.quiz-container {
+    margin: 20px;
+    p {
+        font-size: 10px;
+    }
+    button {
+        width: 60px;
+        height: 60px;
+    }
+}
