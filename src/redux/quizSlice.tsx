@@ -46,6 +46,7 @@ const quizSlice = createSlice({
     },
     resetQuiz: (state) => {
       state.title = null;
+      state.subtitle = null;
       state.image = null;
       state.output = null;
       state.questions = null;
