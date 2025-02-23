@@ -3,7 +3,7 @@ import { Quiz } from "./types";
 export const religionQuiz: Quiz = {
   title: "Którą religią jesteś?",
   subtitle:
-    "Czy jesteś starą, skostniałą tradycją, czy może nowoczesnym ruchem, który dopiero szuka wyznawców? Sprawdź, jaką duchową drogę reprezentujesz – i czy ktoś w ogóle chce cię praktykować! 🔮",
+    "Czy jesteś starą, skostniałą tradycją, czy może nowoczesnym ruchem, który dopiero szuka wyznawców? Sprawdź, jaką duchową drogę reprezentujesz - i czy ktoś w ogóle chce cię praktykować! 🔮",
   image: "/assets/images/church.jpg",
   output: [
     {
@@ -22,19 +22,19 @@ export const religionQuiz: Quiz = {
       score: 3,
       result: "SCJENTOLOGIA 👽",
       description:
-        "Jesteś świeży, kontrowersyjny i dość… dziwny. Nie wiadomo, czy jesteś religią, sektą, czy wielką machiną marketingową, ale jedno jest pewne – masz najlepszy PR w Hollywood. W twojej filozofii kosmici i pieniądze idą w parze. Twoja maksyma? 'Płać i módl się – ale głównie płać'.",
+        "Jesteś świeży, kontrowersyjny i dość… dziwny. Nie wiadomo, czy jesteś religią, sektą, czy wielką machiną marketingową, ale jedno jest pewne - masz najlepszy PR w Hollywood. W twojej filozofii kosmici i pieniądze idą w parze. Twoja maksyma? 'Płać i módl się - ale głównie płać'.",
     },
     {
       score: 4,
       result: "PAŃSTWOWY ATEIZM 🌐",
       description:
-        "Jesteś tu, żeby powiedzieć wszystkim, że Bóg nie istnieje, i będziesz o tym mówić na każdym kroku. Jesteś logiczny, racjonalny i nie lubisz, gdy ktoś ci mówi, że 'może jednak jest coś więcej'. Masz skłonność do narzucania swojego zdania, ale hej – przecież to dla dobra ludzkości! Twoja dewiza? 'Religia to opium dla mas – ale Netflix już jest w porządku'.",
+        "Jesteś tu, żeby powiedzieć wszystkim, że Bóg nie istnieje, i będziesz o tym mówić na każdym kroku. Jesteś logiczny, racjonalny i nie lubisz, gdy ktoś ci mówi, że 'może jednak jest coś więcej'. Masz skłonność do narzucania swojego zdania, ale hej - przecież to dla dobra ludzkości! Twoja dewiza? 'Religia to opium dla mas - ale Netflix już jest w porządku'.",
     },
     {
       score: 5,
       result: "PASTAFARIANIZM 🍝",
       description:
-        "Jesteś najbardziej wyluzowaną opcją na tej liście. Wierzysz w Latającego Potwora Spaghetti i masz w nosie, co myślą o tym inni. Twoi wyznawcy noszą durszlaki na głowie i robią to całkiem serio. Twoja filozofia życia? 'Rób, co chcesz, byle było śmiesznie – i jedz dużo makaronu'.",
+        "Jesteś najbardziej wyluzowaną opcją na tej liście. Wierzysz w Latającego Potwora Spaghetti i masz w nosie, co myślą o tym inni. Twoi wyznawcy noszą durszlaki na głowie i robią to całkiem serio. Twoja filozofia życia? 'Rób, co chcesz, byle było śmiesznie - i jedz dużo makaronu'.",
     },
   ],
   questions: [
@@ -59,7 +59,7 @@ export const religionQuiz: Quiz = {
           points: 1,
         },
         {
-          text: "Nie potrzebuję wiele – materialne rzeczy to tylko iluzja.",
+          text: "Nie potrzebuję wiele - materialne rzeczy to tylko iluzja.",
           points: 2,
         },
         {
@@ -92,7 +92,7 @@ export const religionQuiz: Quiz = {
     {
       question: "Co twoim zdaniem dzieje się po śmierci?",
       answers: [
-        { text: "Niebo, piekło i czyściec – klasyka gatunku.", points: 1 },
+        { text: "Niebo, piekło i czyściec - klasyka gatunku.", points: 1 },
         { text: "Reinkarnacja i nowa szansa na życie.", points: 2 },
         {
           text: "Jesteś poza systemem, żyjesz w wyższych wibracjach.",
@@ -108,11 +108,11 @@ export const religionQuiz: Quiz = {
         { text: "Modlę się za niego i liczę, że zmieni zdanie.", points: 1 },
         { text: "Tłumaczę mu spokojnie, że wszystko jest iluzją.", points: 2 },
         {
-          text: "Próbuję go przekonać – jeśli się nie uda, trudno, mam innych wyznawców.",
+          text: "Próbuję go przekonać - jeśli się nie uda, trudno, mam innych wyznawców.",
           points: 3,
         },
         {
-          text: "Śmieję się i ignoruję – i tak wiem, że mam rację.",
+          text: "Śmieję się i ignoruję - i tak wiem, że mam rację.",
           points: 4,
         },
         {
@@ -125,7 +125,7 @@ export const religionQuiz: Quiz = {
       question: "Co najbardziej denerwuje cię w innych religiach?",
       answers: [
         {
-          text: "Że nie przestrzegają moich zasad – a przecież są jedyne słuszne!",
+          text: "Że nie przestrzegają moich zasad - a przecież są jedyne słuszne!",
           points: 1,
         },
         {
@@ -134,11 +134,11 @@ export const religionQuiz: Quiz = {
         },
         { text: "Że nie są wystarczająco dochodowe i medialne!", points: 3 },
         {
-          text: "Że w ogóle istnieją – powinni już dawno zrozumieć, że to bzdura.",
+          text: "Że w ogóle istnieją - powinni już dawno zrozumieć, że to bzdura.",
           points: 4,
         },
         {
-          text: "Nic mnie nie denerwuje – każda religia jest lepsza z makaronem.",
+          text: "Nic mnie nie denerwuje - każda religia jest lepsza z makaronem.",
           points: 5,
         },
       ],

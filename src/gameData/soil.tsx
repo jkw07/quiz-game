@@ -10,25 +10,25 @@ export const soilQuiz: Quiz = {
       score: 1,
       result: "CZARNOZIEM 🌿",
       description:
-        "Jesteś najbardziej żyzną glebą – wszyscy chcą mieć cię w swoim życiu! Potrafisz sprawić, że każdy wokół ciebie rozkwita, ale jeśli ktoś cię zaniedba, nie dajesz z siebie wszystkiego. Masz w sobie mnóstwo wartości, ale czasem czujesz, że ludzie wykorzystują cię bez wdzięczności. Nic dziwnego, że czasem potrzebujesz regeneracji – nawet najlepsza gleba potrzebuje przerwy!",
+        "Jesteś najbardziej żyzną glebą - wszyscy chcą mieć cię w swoim życiu! Potrafisz sprawić, że każdy wokół ciebie rozkwita, ale jeśli ktoś cię zaniedba, nie dajesz z siebie wszystkiego. Masz w sobie mnóstwo wartości, ale czasem czujesz, że ludzie wykorzystują cię bez wdzięczności. Nic dziwnego, że czasem potrzebujesz regeneracji - nawet najlepsza gleba potrzebuje przerwy!",
     },
     {
       score: 2,
-      result: "GLEBA PIASTOWA 🏜️",
+      result: "GLEBA LESSOWA 🏜️",
       description:
-        "Jesteś stabilny, ale nie każdemu łatwo się z tobą dogadać. Nie lubisz, kiedy ktoś za bardzo cię rozkopuje – wolisz być pozostawiony w spokoju. Czasami jesteś trudny do zrozumienia, ale kiedy ktoś się do ciebie dopasuje, okazuje się, że masz w sobie więcej, niż się wydaje. Twoja odporność na zmiany jest imponująca – nawet wiatr nie jest w stanie cię tak łatwo ruszyć!",
+        "Jesteś stabilny, ale nie każdemu łatwo się z tobą dogadać. Nie lubisz, kiedy ktoś za bardzo cię rozkopuje - wolisz być pozostawiony w spokoju. Czasami jesteś trudny do zrozumienia, ale kiedy ktoś się do ciebie dopasuje, okazuje się, że masz w sobie więcej, niż się wydaje. Twoja odporność na zmiany jest imponująca - nawet wiatr nie jest w stanie cię tak łatwo ruszyć!",
     },
     {
       score: 3,
       result: "GLINA 🏺",
       description:
-        "Jesteś lepki, ale w pozytywnym sensie – ludzie do ciebie lgną i czują się przy tobie komfortowo. Masz tendencję do trzymania wszystkiego w sobie, ale to sprawia, że jesteś solidnym fundamentem. Czasem może być ci trudno się przystosować, ale kiedy już znajdziesz odpowiednie środowisko – jesteś niezastąpiony. Gdy się w coś zaangażujesz, nic nie jest w stanie cię powstrzymać!",
+        "Jesteś lepki, ale w pozytywnym sensie - ludzie do ciebie lgną i czują się przy tobie komfortowo. Masz tendencję do trzymania wszystkiego w sobie, ale to sprawia, że jesteś solidnym fundamentem. Czasem może być ci trudno się przystosować, ale kiedy już znajdziesz odpowiednie środowisko - jesteś niezastąpiony. Gdy się w coś zaangażujesz, nic nie jest w stanie cię powstrzymać!",
     },
     {
       score: 4,
-      result: "GLEBA PIESZCZYSTA 💨",
+      result: "GLEBA PIASZCZYSTA 💨",
       description:
-        "Jesteś lekki, nieprzewidywalny i uwielbiasz zmieniać swoje miejsce! Ludzie nigdy nie wiedzą, gdzie akurat będziesz, ale to część twojego uroku. Masz luźne podejście do życia – nie przejmujesz się drobiazgami, bo zawsze znajdziesz swoje miejsce. Bywasz trudny do okiełznania, ale twoja wolność i energia sprawiają, że ludzie cię uwielbiają!",
+        "Jesteś lekki, nieprzewidywalny i uwielbiasz zmieniać swoje miejsce! Ludzie nigdy nie wiedzą, gdzie akurat będziesz, ale to część twojego uroku. Masz luźne podejście do życia - nie przejmujesz się drobiazgami, bo zawsze znajdziesz swoje miejsce. Bywasz trudny do okiełznania, ale twoja wolność i energia sprawiają, że ludzie cię uwielbiają!",
     },
   ],
   questions: [
@@ -94,7 +94,7 @@ export const soilQuiz: Quiz = {
       answers: [
         { text: "Próbuję zrozumieć i poprawić swoje błędy.", points: 1 },
         {
-          text: "Raczej się tym nie przejmuję – jestem, jaki jestem.",
+          text: "Raczej się tym nie przejmuję - jestem, jaki jestem.",
           points: 2,
         },
         {

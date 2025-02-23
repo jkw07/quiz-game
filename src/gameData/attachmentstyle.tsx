@@ -10,7 +10,7 @@ export const attachmentstyleQuiz: Quiz = {
       score: 1,
       result: "BEZPIECZNE PRZYWIĄZANIE 🛡️",
       description:
-        "Jesteś jednorożcem w świecie relacji – emocjonalnie stabilnym, kochającym i gotowym do zdrowej komunikacji. Ludzie wokół cię nienawidzą, bo nie masz traum, a terapeuci nie zarabiają na twoich problemach. Twoja supermoc? Możesz wysłać wiadomość i nie umierać wewnętrznie, jeśli ktoś nie odpisze w 5 sekund.",
+        "Jesteś jednorożcem w świecie relacji - emocjonalnie stabilnym, kochającym i gotowym do zdrowej komunikacji. Ludzie wokół cię nienawidzą, bo nie masz traum, a terapeuci nie zarabiają na twoich problemach. Twoja supermoc? Możesz wysłać wiadomość i nie umierać wewnętrznie, jeśli ktoś nie odpisze w 5 sekund.",
     },
     {
       score: 2,
@@ -41,7 +41,7 @@ export const attachmentstyleQuiz: Quiz = {
           text: "Zaczynam analizować każdą naszą rozmowę i panikować.",
           points: 2,
         },
-        { text: "Niech sobie nie odpisuje – ja też nie będę.", points: 3 },
+        { text: "Niech sobie nie odpisuje - ja też nie będę.", points: 3 },
         {
           text: "Piszę jeszcze trzy wiadomości, a potem ich blokuję dla zasady.",
           points: 4,
@@ -72,7 +72,7 @@ export const attachmentstyleQuiz: Quiz = {
         { text: "To super, w końcu na tym polega zdrowa relacja.", points: 1 },
         { text: "Czy on/ona mnie kocha, czy tylko tak mówi?!", points: 2 },
         {
-          text: "O nie, to za dużo – muszę znaleźć wymówkę, żeby się zdystansować.",
+          text: "O nie, to za dużo - muszę znaleźć wymówkę, żeby się zdystansować.",
           points: 3,
         },
         {
@@ -94,7 +94,7 @@ export const attachmentstyleQuiz: Quiz = {
           points: 3,
         },
         {
-          text: "Burzliwe jak brazylijska telenowela – jeden dzień miłość, drugi dramat.",
+          text: "Burzliwe jak brazylijska telenowela - jeden dzień miłość, drugi dramat.",
           points: 4,
         },
       ],

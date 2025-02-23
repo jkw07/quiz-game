@@ -1,21 +1,29 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { recordAnswer } from "../redux/quizSlice";
-import { Header } from "./Header";
-import type { RootState } from "../redux/store";
-import { goToLoadingScreen } from "../config/navigation";
-import { endGame } from "../redux/gameSlice";
 import { motion } from "framer-motion";
+
+import { recordAnswer } from "../redux/quizSlice";
+import type { RootState } from "../redux/store";
+import { endGame } from "../redux/gameSlice";
+
+import { goToLoadingScreen } from "../config/navigation";
+
+import { Header } from "./Header";
+
 import "../styles/QuestionsPage.scss";
 
 export const QuestionsPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   const state = useSelector((state: RootState) => state.quiz);
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+
   const currentQuestion =
     state.questions && state.questions[currentQuestionIndex];
+
   const handleAnswerClick = (points: number) => {
     dispatch(recordAnswer({ questionIndex: currentQuestionIndex, points }));
 
@@ -26,6 +34,7 @@ export const QuestionsPage = () => {
       goToLoadingScreen(navigate);
     }
   };
+
   return (
     <>
       <Header text={state.title || ""} />

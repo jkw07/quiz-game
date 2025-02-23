@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
 import { goToResults } from "../config/navigation";
+
 import { Header } from "./Header";
 
 import "../styles/LoadingScreen.scss";

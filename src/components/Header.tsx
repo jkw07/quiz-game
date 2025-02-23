@@ -1,21 +1,27 @@
 import { useNavigate } from "react-router-dom";
-import { goToHomePage } from "../config/navigation";
-import { goToCategoriesPage } from "../config/navigation";
 import { useDispatch } from "react-redux";
+
 import { resetGame } from "../redux/gameSlice";
 import { resetQuiz } from "../redux/quizSlice";
+
+import { goToHomePage } from "../config/navigation";
+import { goToCategoriesPage } from "../config/navigation";
+
 import "../styles/Header.scss";
 
 type HeaderProps = {
   text: string;
 };
+
 export const Header = ({ text }: HeaderProps) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   const handleReset = () => {
     dispatch(resetGame());
     dispatch(resetQuiz());
   };
+
   const handleGoToHome = () => {
     goToHomePage(navigate);
     handleReset();
@@ -24,6 +30,7 @@ export const Header = ({ text }: HeaderProps) => {
     goToCategoriesPage(navigate);
     handleReset();
   };
+
   return (
     <div className="header-container">
       <div className="header-buttons-container">

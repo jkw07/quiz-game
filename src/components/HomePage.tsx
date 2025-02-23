@@ -6,6 +6,11 @@ import "../styles/HomePage.scss";
 
 export const HomePage = () => {
   const navigate = useNavigate();
+
+  const handleGoToCategories = () => {
+    goToCategoriesPage(navigate);
+  };
+
   return (
     <div className="home-page">
       <div className="logo-container">
@@ -13,7 +18,7 @@ export const HomePage = () => {
       </div>
       <p>
         Zastanawiałeś się kiedyś, jakim typem ziemniaka jesteś? Może jesteś
-        purée – delikatny i zawsze w sam raz, albo chrupiącym frytkiem, pełnym
+        purée - delikatny i zawsze w sam raz, albo chrupiącym frytkiem, pełnym
         energii i charakteru? A może bardziej pasujesz do jakiegoś mebla lub...
         typowej pogody?
       </p>
@@ -21,7 +26,7 @@ export const HomePage = () => {
         Odpowiedz na kilka pytań i odkryj, jakim typem jesteś w różnych quizach!
         Czeka Cię niespodzianka!
       </p>
-      <button onClick={() => goToCategoriesPage(navigate)}>
+      <button onClick={handleGoToCategories}>
         <i className="fa-solid fa-play"></i>
         START
       </button>

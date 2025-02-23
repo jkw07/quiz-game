@@ -1,13 +1,18 @@
-import "../styles/CategoriesPage.scss";
 import { useNavigate } from "react-router-dom";
-import { Header } from "./Header";
-import { GameData } from "../gameData/GameData";
-import { QuizContainer } from "./QuizContainer";
 import { useDispatch } from "react-redux";
+
 import { startGame } from "../redux/gameSlice";
 import { setQuiz } from "../redux/quizSlice";
-import { Quiz } from "../gameData/types";
+
 import { goToQuizPage } from "../config/navigation";
+
+import { GameData } from "../gameData/GameData";
+import { Quiz } from "../gameData/types";
+
+import { Header } from "./Header";
+import { QuizContainer } from "./QuizContainer";
+
+import "../styles/CategoriesPage.scss";
 
 export const CategoriesPage = () => {
   const dispatch = useDispatch();
@@ -18,6 +23,7 @@ export const CategoriesPage = () => {
     dispatch(startGame());
     goToQuizPage(navigate);
   };
+
   return (
     <div className="categories-page">
       <Header text={"Wybierz Quiz"} />

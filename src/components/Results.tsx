@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
+
 import { Header } from "./Header";
 
 import "../styles/Results.scss";
@@ -7,13 +8,11 @@ import "../styles/Results.scss";
 export const Results = () => {
   const state = useSelector((state: RootState) => state.quiz);
 
-  const mostFrequentScore = state.selectedAnswers
-    .filter((num) => num !== null)
-    .reduce((acc, num, _, arr) =>
-      arr.filter((x) => x === num).length > arr.filter((x) => x === acc).length
-        ? num
-        : acc
-    );
+  const mostFrequentScore = state.selectedAnswers.reduce((acc, num, _, arr) =>
+    arr.filter((x) => x === num).length > arr.filter((x) => x === acc).length
+      ? num
+      : acc
+  );
 
   const result = state.output?.find(
     (item) => item.score === Number(mostFrequentScore)
