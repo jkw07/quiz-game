@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .categories-page .header-container {
   .categories-button {
     visibility: hidden;     
@@ -15,14 +17,17 @@
     display: flex;
     place-content: center;
     flex-wrap: wrap;
-}
-.quiz-container {
+    gap: 30px;
     margin: 20px;
+}
+
+.quiz-container {
+    padding: 8px;
     p {
-        font-size: 10px;
+        font-size: 14px;
     }
-    button {
-        width: 60px;
-        height: 60px;
+    img {
+        width: 80px;
+        height: 80px;
     }
 }

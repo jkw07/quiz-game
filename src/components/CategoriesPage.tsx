@@ -27,6 +27,7 @@ export const CategoriesPage = () => {
             <QuizContainer
               key={index}
               title={quiz.title}
+              image={quiz.image}
               onClick={() => handlePickQuiz(quiz)}
             />
           );

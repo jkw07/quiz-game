@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+    h2 {
+        font-size: 36px;
+        margin: 0;
+    }
+}
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    button {
+        font-size: 16px;
+        font-weight: bold;
+        width: 60%;
+        min-height: 60px;
+        border-radius: 10px;
+        border: 2px solid $text-color; 
+        background: $light-pink;
+        i {
+            margin-right: 8px;
+        }
+    }
+}

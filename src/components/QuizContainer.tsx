@@ -1,14 +1,17 @@
 type QuizContainerProps = {
   title: string;
   onClick: () => void;
+  image: string | null;
 };
 
-export const QuizContainer = ({ title, onClick }: QuizContainerProps) => {
+export const QuizContainer = ({
+  title,
+  onClick,
+  image,
+}: QuizContainerProps) => {
   return (
     <div className="quiz-container" onClick={onClick}>
-      <button>
-        <img></img>
-      </button>
+      <img src={image ?? ""} />
       <p>{title}</p>
     </div>
   );

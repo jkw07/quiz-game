@@ -12,3 +12,15 @@ export const goToHomePage = (navigate: NavigateFunction) => {
 export const goToQuizPage = (navigate: NavigateFunction) => {
   navigate(ROUTES.QUIZ_PAGE);
 };
+
+export const goToResults = (navigate: NavigateFunction) => {
+  navigate(ROUTES.RESULTS);
+};
+
+export const goToLoadingScreen = (navigate: NavigateFunction) => {
+  navigate(ROUTES.LOADING_SCREEN);
+};
+
+export const goToQuestionsPage = (navigate: NavigateFunction) => {
+  navigate(ROUTES.QUESTIONS_PAGE);
+};

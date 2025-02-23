@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .home-page {
     min-height: inherit;
     display: flex;
@@ -9,16 +11,16 @@
         font-size: 20px;
     }
     button {
-        font-size: 28px;
+        font-size: 24px;
         letter-spacing: 3px;
         font-weight: bold;
-        width: 160px;
-        height: 50px;
+        width: 180px;
+        height: 60px;
         align-self: center;
-        border-radius: 20px;
-        border: 2px solid #FF69B4;
-        color: #1a1a3d;
-        background: linear-gradient(to bottom right, #FF7F50, #FF69B4);;
+        border-radius: 10px;
+        border: 2px solid $text-color;
+        color: $text-color;
+        background: $primary-puzzle-pink;
         i {
             margin-right: 8px;
         }

@@ -1,10 +1,12 @@
+@use 'variables' as *;
+
 #root {
   margin: 50px auto;
   padding: 0;
   text-align: center;
-  background-color: whitesmoke;
+  background-color: $primary-white;
   border-radius: 20px;
-  box-shadow: 0 0 10px #4682B4;
+  box-shadow: 0 0 10px $text-color;
   width: 80%;
   max-width: 900px;
   height:fit-content;

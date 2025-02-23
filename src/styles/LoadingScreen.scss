@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    height: 250px;
+}
+
+.loading-container svg {
+    width: 100px;
+    height: 100px;
+}

@@ -1,8 +1,10 @@
+@use 'variables' as *;
+
 .header-container {
     display: flex;
     height: 60px;
     align-items: center;
-    background: linear-gradient(to bottom right, #FF7F50, #FF69B4);
+    background: $primary-puzzle-pink;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     .header-buttons-container {
@@ -15,7 +17,7 @@
         background: transparent;
         border: none;
         i {
-            color: #1a1a3d;
+            color: $text-color;
         }
     }
 }

@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 @font-face {
     font-family: 'Bitter';
     src: url('../assets/fonts/Bitter-Regular.otf') format('opentype');
@@ -31,9 +33,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: #1a1a3d;
-  background: linear-gradient(to bottom right, #ADD8E6, #4682B4);
-
+  color: $text-color;
+   background: white;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
