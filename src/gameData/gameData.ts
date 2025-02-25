@@ -11,7 +11,7 @@ import { tvseriesQuiz } from "./tvseries";
 import { Quiz } from "./types";
 import { wikiQuiz } from "./wiki";
 
-export const GameData: Quiz[] = [
+export const gameData: Quiz[] = [
   potatoeQuiz,
   religionQuiz,
   soilQuiz,
@@ -24,3 +24,5 @@ export const GameData: Quiz[] = [
   tvseriesQuiz,
   wikiQuiz,
 ];
+
+//TODO popr rozszerzenia i nazwy (z wielkiej tylko komponenty)

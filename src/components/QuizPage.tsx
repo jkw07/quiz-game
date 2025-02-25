@@ -18,10 +18,10 @@ export const QuizPage = () => {
 
   return (
     <div className="quiz-page">
-      <Header text={state.title || ""} />
+      <Header text={state.title} />
       <div className="quiz-main-container">
         <img src={state.image || ""} />
-        <p>{state.subtitle || ""}</p>
+        <p>{state.subtitle}</p>
         <button onClick={handleClick}>zaczynamy!</button>
       </div>
     </div>

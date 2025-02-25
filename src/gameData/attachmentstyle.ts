@@ -8,25 +8,25 @@ export const attachmentstyleQuiz: Quiz = {
   output: [
     {
       score: 1,
-      result: "BEZPIECZNE PRZYWIĄZANIE 🛡️",
+      result: "STYL BEZPIECZNE 🛡️",
       description:
         "Jesteś jednorożcem w świecie relacji - emocjonalnie stabilnym, kochającym i gotowym do zdrowej komunikacji. Ludzie wokół cię nienawidzą, bo nie masz traum, a terapeuci nie zarabiają na twoich problemach. Twoja supermoc? Możesz wysłać wiadomość i nie umierać wewnętrznie, jeśli ktoś nie odpisze w 5 sekund.",
     },
     {
       score: 2,
-      result: "LĘKOWE PRZYWIĄZANIE 😱",
+      result: "STYL LĘKOWY 😱",
       description:
         "Jesteś emocjonalnym rollercoasterem i każdy, kto cię spotka, wsiada bez biletu. Nie wiesz, czy ludzie cię kochają, dopóki nie napiszą tego 12 razy dziennie. Twoja supermoc? Pisanie wiadomości w stylu 'ok, nic się nie stało' i jednoczesne umieranie w środku, bo jednak coś się stało.",
     },
     {
       score: 3,
-      result: "UNIKAJĄCE PRZYWIĄZANIE 🚷",
+      result: "STYL UNIKAJĄCY 🚷",
       description:
         "Twój ulubiony sport? Uciekanie. Ucieczka od emocji, bliskości i wszystkiego, co może sugerować, że ktoś cię lubi. Kiedy ktoś się do ciebie zbliża, twój mózg mówi 'RUN'. Twoja supermoc? Pisanie 'nie szukam niczego poważnego' na Tinderze i blokowanie ludzi, gdy robi się za miło.",
     },
     {
       score: 4,
-      result: "LĘKOWO-UNIKAJĄCE PRZYWIĄZANIE 🔥💀",
+      result: "STYL LĘKOWO-UNIKAJĄCY (NAJGORZEJ💀)",
       description:
         "Jesteś emocjonalnym chaosem, który nie wie, czy chce miłości, czy spokoju. Jednego dnia umierasz z tęsknoty, drugiego znikasz bez śladu. Twoja supermoc? Tworzenie dramatów, których nie wymyśliłby nawet Netflix i wywoływanie w innych traumy, z której będą się leczyć przez lata.",
     },

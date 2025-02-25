@@ -4,21 +4,11 @@ import { RootState } from "../redux/store";
 import { Header } from "./Header";
 
 import "../styles/Results.scss";
+import { resultSelector } from "../redux/selectors";
+import { HalfPieChart } from "./HalfPieChart";
 
 export const Results = () => {
-  const state = useSelector((state: RootState) => state.quiz);
-
-  const mostFrequentScore = state.selectedAnswers.reduce((acc, num, _, arr) =>
-    arr.filter((x) => x === num).length > arr.filter((x) => x === acc).length
-      ? num
-      : acc
-  );
-
-  const result = state.output?.find(
-    (item) => item.score === Number(mostFrequentScore)
-  );
-  console.log(state.selectedAnswers);
-  console.log(mostFrequentScore);
+  const result = useSelector((state: RootState) => resultSelector(state.quiz));
 
   return (
     <>
@@ -28,6 +18,7 @@ export const Results = () => {
           <>
             <h2>{result.result}</h2>
             <p>{result.description}</p>
+            <HalfPieChart />
           </>
         ) : (
           <p className="error-message">Nie znaleziono wyniku</p>

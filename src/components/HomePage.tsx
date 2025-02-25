@@ -14,7 +14,7 @@ export const HomePage = () => {
   return (
     <div className="home-page">
       <div className="logo-container">
-        <img src={logo} className="logo react" alt="React logo" />
+        <img src={logo} className="logo" alt="Quiz Logo" />
       </div>
       <p>
         Zastanawiałeś się kiedyś, jakim typem ziemniaka jesteś? Może jesteś

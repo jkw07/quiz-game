@@ -11,23 +11,23 @@ interface Output {
   description: string;
 }
 
-interface QuizState {
-  title: string | null;
-  subtitle: string | null;
+export interface QuizState {
+  title: string;
+  subtitle: string;
   image: string | null;
-  output: Output[] | null;
-  questions: Question[] | null;
+  output: Output[];
+  questions: Question[];
   selectedAnswers: (number | null)[];
 }
 
 const quizSlice = createSlice({
   name: "quiz",
   initialState: {
-    title: null,
-    subtitle: null,
+    title: "",
+    subtitle: "",
     image: null,
-    output: null,
-    questions: null,
+    output: [],
+    questions: [],
     selectedAnswers: [] as (number | null)[],
   } as QuizState,
   reducers: {
@@ -45,11 +45,11 @@ const quizSlice = createSlice({
       state.selectedAnswers[questionIndex] = points;
     },
     resetQuiz: (state) => {
-      state.title = null;
-      state.subtitle = null;
-      state.image = null;
-      state.output = null;
-      state.questions = null;
+      state.title = "";
+      state.subtitle = "";
+      state.image = "";
+      state.output = [];
+      state.questions = [];
       state.selectedAnswers = [];
     },
   },

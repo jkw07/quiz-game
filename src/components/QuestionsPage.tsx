@@ -21,13 +21,12 @@ export const QuestionsPage = () => {
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
-  const currentQuestion =
-    state.questions && state.questions[currentQuestionIndex];
+  const currentQuestion = state.questions[currentQuestionIndex];
 
   const handleAnswerClick = (points: number) => {
     dispatch(recordAnswer({ questionIndex: currentQuestionIndex, points }));
 
-    if (state.questions && currentQuestionIndex < state.questions.length - 1) {
+    if (currentQuestionIndex < state.questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
       dispatch(endGame());

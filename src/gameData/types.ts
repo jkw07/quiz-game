@@ -17,7 +17,7 @@ export type Question = {
 export type Quiz = {
   title: string;
   subtitle: string;
-  image: string | null;
+  image: string;
   output: Output[];
   questions: Question[];
 };

@@ -6,7 +6,7 @@ import { setQuiz } from "../redux/quizSlice";
 
 import { goToQuizPage } from "../config/navigation";
 
-import { GameData } from "../gameData/GameData";
+import { gameData } from "../gameData/gameData";
 import { Quiz } from "../gameData/types";
 
 import { Header } from "./Header";
@@ -28,7 +28,7 @@ export const CategoriesPage = () => {
     <div className="categories-page">
       <Header text={"Wybierz Quiz"} />
       <div className="categories-container">
-        {GameData.map((quiz, index) => {
+        {gameData.map((quiz, index) => {
           return (
             <QuizContainer
               key={index}

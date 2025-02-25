@@ -26,3 +26,13 @@
         background: $primary-puzzle-pink;
     }
 }
+
+@media (max-width: 768px) {
+    .quiz-page {
+        .header-container{
+            h1 {
+                font-size: 22px;
+            }
+        }
+    }
+}

@@ -34,10 +34,10 @@ export const Header = ({ text }: HeaderProps) => {
   return (
     <div className="header-container">
       <div className="header-buttons-container">
-        <button onClick={handleGoToHome}>
+        <button onClick={handleGoToHome} data-testid="home-button">
           <i className="fa-solid fa-house fa-2xl home-button"></i>
         </button>
-        <button onClick={handleGoToCategory}>
+        <button onClick={handleGoToCategory} data-testid="categories-button">
           <i className="fa-solid fa-list fa-2xl categories-button"></i>
         </button>
       </div>

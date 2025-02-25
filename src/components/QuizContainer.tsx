@@ -1,7 +1,7 @@
 type QuizContainerProps = {
   title: string;
   onClick: () => void;
-  image: string | null;
+  image: string;
 };
 
 export const QuizContainer = ({
@@ -10,8 +10,12 @@ export const QuizContainer = ({
   image,
 }: QuizContainerProps) => {
   return (
-    <div className="quiz-container" onClick={onClick}>
-      <img src={image ?? ""} />
+    <div
+      className="quiz-container"
+      data-testid="quiz-container"
+      onClick={onClick}
+    >
+      <img src={image} />
       <p>{title}</p>
     </div>
   );

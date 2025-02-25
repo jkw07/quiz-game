@@ -27,6 +27,19 @@
     }
 }
 
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.05); }
+    60% { transform: scale(0.95); } 
+    80% { transform: scale(1.05); }
+    100% { transform: scale(1.1); }
+}
+
 .logo-container {
     width: 100%;
     max-width: 500px;
