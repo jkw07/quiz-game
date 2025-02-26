@@ -8,6 +8,7 @@ export const HomePage = () => {
   const navigate = useNavigate();
 
   const handleGoToCategories = () => {
+    console.log("Navigating to categories with:", navigate);
     goToCategoriesPage(navigate);
   };
 

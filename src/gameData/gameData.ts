@@ -24,5 +24,3 @@ export const gameData: Quiz[] = [
   tvseriesQuiz,
   wikiQuiz,
 ];
-
-//TODO popr rozszerzenia i nazwy (z wielkiej tylko komponenty)

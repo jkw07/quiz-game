@@ -1,5 +1,5 @@
 import { NavigateFunction } from "react-router-dom";
-import { ROUTES } from "../config/config";
+import { ROUTES } from "./config";
 
 export const goToCategoriesPage = (navigate: NavigateFunction) => {
   navigate(ROUTES.CATEGORY);
