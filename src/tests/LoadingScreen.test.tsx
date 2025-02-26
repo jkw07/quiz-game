@@ -17,7 +17,6 @@ test("renders loading text", () => {
 test("navigates to results after timeout", async () => {
   renderComponent(<LoadingScreen />);
 
-  // Czekamy na 2,5 sekundy i sprawdzamy, czy `goToResults` został wywołany
   await waitFor(
     () => {
       expect(mockGoToResults).toHaveBeenCalledWith(mockNavigate);

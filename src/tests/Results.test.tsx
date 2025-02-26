@@ -5,6 +5,7 @@ import { Results } from "../components/Results";
 import { vi, Mock } from "vitest";
 import * as selectors from "../redux/selectors";
 
+//dla framer-motion
 beforeAll(() => {
   global.ResizeObserver = class {
     observe() {}
@@ -17,12 +18,11 @@ beforeAll(() => {
 vi.mock("../redux/selectors", async () => {
   const actual = await vi.importActual<typeof selectors>("../redux/selectors");
   return {
-    ...actual, // ✅ Zachowujemy oryginalne funkcje
-    resultSelector: vi.fn(), // ✅ Zamockowany selektor
+    ...actual, // zachowane oryginalne funkcje
+    resultSelector: vi.fn(), // zamockowany selektor
   };
 });
 
-// ✅ Importujemy zamockowaną wersję
 import { resultSelector } from "../redux/selectors";
 
 beforeEach(() => {

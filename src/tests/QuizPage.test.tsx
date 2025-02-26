@@ -18,7 +18,7 @@ const mockQuizState = {
 beforeEach(() => {
   resetMocks();
   mockGoToQuestionsPage.mockClear();
-  renderComponent(<QuizPage />, { quiz: mockQuizState }); // ✅ Przekazujemy `preloadedState`
+  renderComponent(<QuizPage />, { quiz: mockQuizState }); // preloadedState
 });
 
 test("renders quiz title and subtitle", () => {
