@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import { ROUTES } from "./config/config";
+import { ROUTES } from "./config/routes";
 import { HomePage } from "./components/HomePage";
 import "./styles/App.scss";
 import { CategoriesPage } from "./components/CategoriesPage";
