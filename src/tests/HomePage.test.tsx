@@ -1,28 +1,14 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import { vi } from "vitest";
+import { screen, fireEvent } from "@testing-library/react";
+import { renderComponent, resetMocks, mockNavigate } from "./testUtils";
 
-// MOCKI PRZED `HomePage`
+// Mocki przed komponentem
 import { mockGoToCategoriesPage } from "./mocks/navigationMock";
 
 import { HomePage } from "../components/HomePage";
-
-const mockNavigate = vi.fn();
-vi.mock("react-router-dom", async () => {
-  const actual = await vi.importActual("react-router-dom");
-  return {
-    ...actual,
-    useNavigate: () => mockNavigate,
-  };
-});
-
 beforeEach(() => {
+  resetMocks();
   mockGoToCategoriesPage.mockClear();
-  render(
-    <MemoryRouter>
-      <HomePage />
-    </MemoryRouter>
-  );
+  renderComponent(<HomePage />);
 });
 
 test("Button exists and navigates correctly", () => {

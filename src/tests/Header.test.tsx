@@ -1,56 +1,27 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import { vi } from "vitest";
-import { Provider } from "react-redux";
-import { configureStore } from "@reduxjs/toolkit";
+import { screen, fireEvent } from "@testing-library/react";
 
-// MOCKI PRZED `Header`
+import {
+  renderComponent,
+  resetMocks,
+  mockNavigate,
+  mockDispatch,
+} from "./testUtils";
+import { resetGame } from "../redux/gameSlice";
+import { resetQuiz } from "../redux/quizSlice";
+
+// Mocki przed komponentem!
 import {
   mockGoToHomePage,
   mockGoToCategoriesPage,
 } from "./mocks/navigationMock";
 
 import { Header } from "../components/Header";
-import gameReducer, { resetGame } from "../redux/gameSlice";
-import quizReducer, { resetQuiz } from "../redux/quizSlice";
-
-const mockNavigate = vi.fn();
-vi.mock("react-router-dom", async () => {
-  const actual = await vi.importActual("react-router-dom");
-  return {
-    ...actual,
-    useNavigate: () => mockNavigate,
-  };
-});
-
-const mockDispatch = vi.fn();
-vi.mock("react-redux", async () => {
-  const actual = await vi.importActual("react-redux");
-  return {
-    ...actual,
-    useDispatch: () => mockDispatch,
-  };
-});
-
-const store = configureStore({
-  reducer: {
-    quiz: quizReducer,
-    game: gameReducer,
-  },
-});
 
 beforeEach(() => {
-  mockDispatch.mockClear();
+  resetMocks();
   mockGoToHomePage.mockClear();
   mockGoToCategoriesPage.mockClear();
-
-  render(
-    <Provider store={store}>
-      <MemoryRouter>
-        <Header text="Test Header" />
-      </MemoryRouter>
-    </Provider>
-  );
+  renderComponent(<Header text="Test Header" />);
 });
 
 test("Home button dispatches reset actions and navigates", () => {
