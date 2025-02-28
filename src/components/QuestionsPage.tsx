@@ -1,38 +1,11 @@
-import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-
-import { recordAnswer } from "../redux/quizSlice";
-import type { RootState } from "../redux/store";
-import { endGame } from "../redux/gameSlice";
-
-import { goToLoadingScreen } from "../config/navigation";
-
 import { Header } from "./Header";
-
+import { useAnswerClick } from "../hooks/useAnswerClick";
 import "../styles/QuestionsPage.scss";
 
 export const QuestionsPage = () => {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const state = useSelector((state: RootState) => state.quiz);
-
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-
-  const currentQuestion = state.questions[currentQuestionIndex];
-
-  const handleAnswerClick = (points: number) => {
-    dispatch(recordAnswer({ questionIndex: currentQuestionIndex, points }));
-
-    if (currentQuestionIndex < state.questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-    } else {
-      dispatch(endGame());
-      goToLoadingScreen(navigate);
-    }
-  };
+  const { state, currentQuestionIndex, currentQuestion, handleAnswerClick } =
+    useAnswerClick();
 
   return (
     <>

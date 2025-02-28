@@ -8,7 +8,7 @@ import {
 } from "./testUtils";
 import { startGame } from "../redux/gameSlice";
 import { setQuiz } from "../redux/quizSlice";
-import { gameData } from "../gameData/gameData";
+import { gameData } from "../constans/gameData/gameData";
 
 // Mocki przed komponentem!
 import { mockGoToQuizPage } from "./mocks/navigationMock";

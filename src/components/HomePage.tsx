@@ -1,16 +1,9 @@
-import { useNavigate } from "react-router-dom";
-import { goToCategoriesPage } from "../config/navigation";
-
 import logo from "../assets/images/logo2.png";
 import "../styles/HomePage.scss";
+import { useGameActions } from "../hooks/useGameActions";
 
 export const HomePage = () => {
-  const navigate = useNavigate();
-
-  const handleGoToCategories = () => {
-    console.log("Navigating to categories with:", navigate);
-    goToCategoriesPage(navigate);
-  };
+  const { handleGoToCategories } = useGameActions();
 
   return (
     <div className="home-page">

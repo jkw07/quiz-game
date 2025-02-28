@@ -1,20 +1,12 @@
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-
 import { RootState } from "../redux/store";
-import { goToQuestionsPage } from "../config/navigation";
-
 import { Header } from "./Header";
-
+import { useGameActions } from "../hooks/useGameActions";
 import "../styles/QuizPage.scss";
 
 export const QuizPage = () => {
-  const navigate = useNavigate();
+  const { handleStartQuestions } = useGameActions();
   const state = useSelector((state: RootState) => state.quiz);
-
-  const handleClick = () => {
-    goToQuestionsPage(navigate);
-  };
 
   return (
     <div className="quiz-page">
@@ -22,7 +14,7 @@ export const QuizPage = () => {
       <div className="quiz-main-container">
         <img src={state.image || ""} />
         <p>{state.subtitle}</p>
-        <button onClick={handleClick}>zaczynamy!</button>
+        <button onClick={handleStartQuestions}>zaczynamy!</button>
       </div>
     </div>
   );

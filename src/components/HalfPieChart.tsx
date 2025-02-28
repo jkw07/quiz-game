@@ -6,19 +6,11 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { COLORS } from "../constans/pieChartColors";
 
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import { pieChartDataSelector } from "../redux/selectors";
-
-const COLORS = [
-  "#0088FE",
-  "#00C49F",
-  "#FFBB28",
-  "#FF8042",
-  "#A569BD",
-  "#E74C3C",
-];
 
 export const HalfPieChart = () => {
   const data = useSelector((state: RootState) =>

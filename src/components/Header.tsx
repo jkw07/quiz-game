@@ -1,43 +1,24 @@
-import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-
-import { resetGame } from "../redux/gameSlice";
-import { resetQuiz } from "../redux/quizSlice";
-
-import { goToHomePage } from "../config/navigation";
-import { goToCategoriesPage } from "../config/navigation";
-
 import "../styles/Header.scss";
+import { useGameActions } from "../hooks/useGameActions";
 
 type HeaderProps = {
   text: string;
 };
 
 export const Header = ({ text }: HeaderProps) => {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const handleReset = () => {
-    dispatch(resetGame());
-    dispatch(resetQuiz());
-  };
-
-  const handleGoToHome = () => {
-    goToHomePage(navigate);
-    handleReset();
-  };
-  const handleGoToCategory = () => {
-    goToCategoriesPage(navigate);
-    handleReset();
-  };
+  const { handleResetAndGoToCategory, handleResetAndGoToHome } =
+    useGameActions();
 
   return (
     <div className="header-container">
       <div className="header-buttons-container">
-        <button onClick={handleGoToHome} data-testid="home-button">
+        <button onClick={handleResetAndGoToHome} data-testid="home-button">
           <i className="fa-solid fa-house fa-2xl home-button"></i>
         </button>
-        <button onClick={handleGoToCategory} data-testid="categories-button">
+        <button
+          onClick={handleResetAndGoToCategory}
+          data-testid="categories-button"
+        >
           <i className="fa-solid fa-list fa-2xl categories-button"></i>
         </button>
       </div>

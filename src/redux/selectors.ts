@@ -1,20 +1,17 @@
 
 import { QuizState } from '../redux/quizSlice';
 
-export const resultSelector = (
-  state: QuizState,
-) => {
+export const resultSelector = (state: QuizState) => {
   if (!state.selectedAnswers || state.selectedAnswers.length === 0) {
     return null;
   }
-
-const mostFrequentScore = () =>
-  state.selectedAnswers.reduce((acc, num, _, arr) =>
-    arr.filter((x) => x === num).length > arr.filter((x) => x === acc).length
-      ? num
-      : acc
-  );
-
+  const mostFrequentScore = () =>
+    state.selectedAnswers.reduce((acc, num, _, arr) =>
+      arr.filter((x) => x === num).length > arr.filter((x) => x === acc).length
+        ? num
+        : acc
+    );
+  
   const score = mostFrequentScore();
 
   if (score === undefined) {
