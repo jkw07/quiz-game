@@ -28,11 +28,16 @@
 }
 
 @media (max-width: 768px) {
-    .quiz-page {
-        .header-container{
-            h1 {
-                font-size: 22px;
-            }
+    .quiz-main-container {
+        padding: 30px;
+        p {
+            font-size: 14px;
+        }
+        button {
+            font-size: 18px;
+            letter-spacing: 1px;
+            width: 130px;
+            height: 50px;
         }
     }
 }

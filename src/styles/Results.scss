@@ -17,3 +17,19 @@
         font-size: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .error-message {
+        font-size: 18px;
+    }
+    .result-container {
+        padding: 20px;
+        h2 {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}

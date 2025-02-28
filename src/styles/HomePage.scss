@@ -55,3 +55,16 @@ button:hover {
         object-fit: contain;
     }
 }
+
+@media (max-width: 768px) {
+    .home-page {
+        p {
+            font-size: 14px;
+        }
+        button {
+            font-size: 14px;
+            width: 140px;
+            height: 40px;
+        }
+    }
+}

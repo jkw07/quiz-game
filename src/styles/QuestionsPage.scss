@@ -30,3 +30,20 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .question-container {
+        padding: 20px;
+        gap: 10px;
+        h2 {
+            font-size: 18px;
+        }
+    }
+    .answers-container {
+        gap: 10px;
+        button {
+            font-size: 12px;
+            width: 60%;
+        }
+    }
+}

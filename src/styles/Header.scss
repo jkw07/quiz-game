@@ -2,7 +2,8 @@
 
 .header-container {
     display: flex;
-    height: 60px;
+    min-height: 60px;
+    height:fit-content;
     align-items: center;
     background: $primary-puzzle-pink;
     border-top-left-radius: inherit;
@@ -19,5 +20,20 @@
         i {
             color: $text-color;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        h1 {
+            font-size: 18px;
+        }
+    }
+    .header-buttons-container {
+        margin: auto 10px;
+    }
+    button {
+        width:30px;
+        height:30px;
     }
 }

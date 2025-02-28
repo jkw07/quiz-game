@@ -7,31 +7,49 @@
 }
 
 .quiz-container {
-    padding: 8px;
-    p {
-        font-size: 16px;
-    }
-    img {
-        width: 100px;
-        height: 100px;
-    }
+  padding: 8px;
+  p {
+    font-size: 16px;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .categories-page {
-        position: relative;
-        max-width: inherit;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-        max-height: 400px;
-        min-height: inherit;
-      }
+  position: relative;
+  max-width: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  max-height: 400px;
+  min-height: inherit;
+}
 
-      .categories-container {
-        display: flex;
-        margin: 30px;
-        gap: 50px;
-        overflow-x: auto;
-        padding: 20px 0;
-        scrollbar-width: 5px;
-        scrollbar-color: $light-pink #f0f0f0;
-      }
+.categories-container {
+  display: flex;
+  margin: 30px;
+  gap: 50px;
+  overflow-x: auto;
+  padding: 20px 0;
+  scrollbar-width: 5px;
+  scrollbar-color: $light-pink #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 5px;
+    p {
+      font-size: 14px;
+    }
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .categories-container {
+    margin: 20px;
+    gap: 30px;
+    padding: 10px 0;
+  }
+}
