@@ -1,65 +1,71 @@
-🎮 Quiz Game
+# 🎮 Quiz Game
 
-Quiz Game is an interactive quiz application where users can answer questions and discover their personality type based on their choices. The results are presented clearly, with dynamic and smooth animations.
+**Quiz Game** to interaktywna aplikacja quizowa, w której użytkownicy mogą odpowiadać na pytania i dowiedzieć się, jakim "typem" są na podstawie swoich odpowiedzi. Wyniki są prezentowane w przejrzysty sposób, a cała aplikacja ma dynamiczne i płynne animacje.
 
-🚀 Technologies
+## 🚀 Technologie
 
-The project was built using:
+Projekt został zbudowany z wykorzystaniem:
 
-⚛ React + Vite – a fast and modern frontend environment
-📦 Redux – for state management
-🎨 FontAwesome – for icons and UI elements
-💃 Framer Motion – for smooth animations
-📊 Recharts – for visualizing results with charts
+- ⚛ **React + Vite** – szybkie i nowoczesne środowisko frontendowe
+- 📦 **Redux** – do zarządzania stanem aplikacji
+- 🎨 **FontAwesome** – do ikon i elementów UI
+- 💃 **Framer Motion** – do płynnych animacji
+- 📊 **Recharts** – do wizualizacji wyników w formie wykresów
 
-📦 Installation and Setup
+## 📦 Instalacja i uruchomienie
 
-To run the project locally, follow these steps:
+Aby uruchomić projekt lokalnie, wykonaj poniższe kroki:
 
-# Clone the repository
-
+```bash
+# Klonowanie repozytorium
 git clone https://github.com/jkw07/quiz-game.git
 cd quiz-game
 
-# Install dependencies
-
+# Instalacja zależności
 npm install
 
-# Start the application
+# Uruchomienie aplikacji
+tnpm run dev
+```
 
-npm run dev
+## 🕹 Jak działa?
 
-🕹 How It Works
+1. Użytkownik wybiera quiz.
+2. Odpowiada na serię pytań.
+3. Aplikacja analizuje odpowiedzi i oblicza wynik.
+4. Wynik jest prezentowany wraz z opisem i wykresem pokazującym rozkład odpowiedzi.
 
-The user selects a quiz.
-They answer a series of questions.
-The application analyzes the answers and calculates the result.
-The result is displayed with a description and a chart showing answer distribution.
+## 🎯 Funkcjonalności
 
-🎯 Features
+✅ Wiele różnych quizów do wyboru
+✅ Dynamiczne animacje (Framer Motion)
+✅ Zarządzanie stanem za pomocą Redux
+✅ Wykresy wyników (Recharts)
+✅ Intuicyjny interfejs użytkownika
 
-✅ Multiple quiz options
-✅ Dynamic animations (Framer Motion)
-✅ State management with Redux
-✅ Visualized results using Recharts
-✅ Intuitive user interface
+## 📊 Wizualizacja wyników
 
-📊 Results Visualization
-The Recharts library presents users' choices in the form of charts, showcasing the statistics of their selections.
+Biblioteka **Recharts**, przedstawia wybory użytkowników w postaci wykresu. Prezentowane są statystyki wyborów dla poszczególnych odpowiedzi.
 
-🏗 Project Structure
+## 🏗 Struktura projektu
 
+```
 /src
-/components # UI Components
-/config # For navigation
-/gameData #
-/redux # State management
-/assets # Icons, images
+  /components  # Komponenty UI
+  /config       # Zarządzanie nawigacją
+  /gameData     # Quizy
+  /redux       # Zarządzanie stanem
+  /assets      # Ikony, obrazy
+```
 
-🤝 Contributing
-If you'd like to contribute to the project, fork the repository and submit a pull request! We welcome new ideas and improvements. 😊
+## 🤝 Współpraca
 
-📜 License
-This project is available under the MIT license. Feel free to use and modify it as needed.
+Jeśli chcesz wnieść swój wkład do projektu, **forknij repozytorium** i stwórz pull request! Chętnie przyjmujemy nowe pomysły i ulepszenia. 😊
 
-🎉 Ready to find out what type you are? Launch the application and see for yourself! 🚀
+## 📜 Licencja
+
+Projekt dostępny na licencji MIT. Możesz go używać i modyfikować zgodnie z własnymi potrzebami.
+
+---
+
+🎉 **Gotowy, by sprawdzić, jakim typem jesteś?** Uruchom aplikację i przekonaj się! 🚀

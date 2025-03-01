@@ -29,6 +29,9 @@
             margin-right: 8px;
         }
     }
+    button:hover {
+        background: $dark-pink;
+    }
 }
 
 @media (max-width: 768px) {

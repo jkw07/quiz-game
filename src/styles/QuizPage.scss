@@ -25,6 +25,9 @@
         color: $text-color;
         background: $primary-puzzle-pink;
     }
+    button:hover {
+        background: $dark-pink;
+    }
 }
 
 @media (max-width: 768px) {

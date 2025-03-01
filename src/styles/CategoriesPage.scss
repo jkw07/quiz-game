@@ -8,6 +8,7 @@
 
 .quiz-container {
   padding: 8px;
+  opacity: 0.8;
   p {
     font-size: 16px;
   }
@@ -15,6 +16,11 @@
     width: 100px;
     height: 100px;
   }
+}
+
+.quiz-container:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .categories-page {
@@ -33,7 +39,7 @@
   overflow-x: auto;
   padding: 20px 0;
   scrollbar-width: 5px;
-  scrollbar-color: $light-pink #f0f0f0;
+  scrollbar-color: $dark-pink #f0f0f0;
 }
 
 @media (max-width: 768px) {
