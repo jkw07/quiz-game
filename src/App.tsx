@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import { ROUTES } from "./config/routes";
@@ -11,10 +11,12 @@ import { LoadingScreen } from "./components/LoadingScreen";
 import { QuizPage } from "./components/QuizPage";
 
 export const App = () => {
+  const Router =
+    process.env.NODE_ENV === "production" ? HashRouter : BrowserRouter;
   return (
     <>
       <Provider store={store}>
-        <Router basename="/quiz-game/">
+        <Router>
           <Routes>
             <Route path={ROUTES.HOME} element={<HomePage />} />
             <Route path={ROUTES.CATEGORY} element={<CategoriesPage />} />
