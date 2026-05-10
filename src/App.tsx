@@ -14,7 +14,7 @@ export const App = () => {
   return (
     <>
       <Provider store={store}>
-        <Router>
+        <Router basename="/quiz-game/">
           <Routes>
             <Route path={ROUTES.HOME} element={<HomePage />} />
             <Route path={ROUTES.CATEGORY} element={<CategoriesPage />} />
